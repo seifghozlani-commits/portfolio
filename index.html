@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seif Ghozlani | Élève Ingénieur en Informatique - Portfolio</title>
+  <meta name="description" content="Portfolio professionnel de Seif Ghozlani, Élève Ingénieur en Informatique à l'École Polytechnique de Sousse. Spécialisé en génie logiciel, systèmes embarqués, IoT industriel et traçabilité de production.">
+  <meta name="keywords" content="Seif Ghozlani, Ingénieur Informatique, Systèmes Embarqués, IoT, Raspberry Pi, Leoni, Power BI, MySQL, ICPC, Sousse, Tunisie">
+  <meta name="author" content="Seif Ghozlani">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Seif Ghozlani | Portfolio Ingénieur Informatique & Embarqué">
+  <meta property="og:description" content="Découvrez les projets, compétences et expériences industrielles chez Leoni de Seif Ghozlani.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300f2fe'/><text x='50%' y='65%' font-size='50' font-weight='bold' fill='%23000' text-anchor='middle'>SG</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="brand-logo" aria-label="Seif Ghozlani Accueil">
+        <div class="logo-badge">SG</div>
+        <span>Seif<span style="color: var(--primary);">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link active" data-nav="about">À Propos</a></li>
+          <li><a href="#experience" class="nav-link" data-nav="experience">Expérience</a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills">Compétences</a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects">Projets</a></li>
+          <li><a href="#education" class="nav-link" data-nav="education">Formation</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="lang-toggle-btn" aria-label="Changer de langue">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="lang-label">FR | EN</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu mobile">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="hero-status-pill" id="hero-status">
+              <span class="status-dot"></span>
+              <span>Disponible pour opportunités & stages ingénieur</span>
+            </div>
+
+            <p class="hero-greeting" id="hero-greeting">Bonjour, je suis</p>
+            <h1 class="hero-title" id="hero-name">Seif Ghozlani</h1>
+
+            <div class="hero-typing-wrapper">
+              <span id="typewriter-text">Élève Ingénieur en Informatique</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-bio" id="hero-bio">
+              Élève ingénieur en informatique passionné par la convergence entre développement logiciel de pointe et automatisation industrielle. Fort d'une expérience concrète et éprouvée sur le terrain chez Leoni (systèmes embarqués, traçabilité MySQL et dashboards décisionnels Power BI), je conçois des solutions performantes, robustes et orientées résultats.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
+                <span>Découvrir mes réalisations</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <button class="btn btn-secondary" id="btn-download-cv">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Imprimer / Télécharger CV</span>
+              </button>
+
+              <a href="https://github.com/seifghozlani-commits" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="Profil GitHub" title="GitHub de Seif Ghozlani">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Quick Contacts Info -->
+            <div class="hero-quick-meta" id="about">
+              <div class="quick-meta-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span id="meta-location">Sousse, Tunisie</span>
+              </div>
+              <div class="quick-meta-item" style="cursor: pointer;" onclick="copyToClipboard('seif.gholzani@polytechnicien.tn', 'Email')" title="Cliquer pour copier">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span id="meta-email">seif.gholzani@polytechnicien.tn</span>
+              </div>
+              <div class="quick-meta-item" style="cursor: pointer;" onclick="copyToClipboard('+21655096929', 'Téléphone')" title="Cliquer pour copier">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span id="meta-phone">+216 55 096 929</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Avatar & Floating Badges -->
+          <div class="hero-visual">
+            <div class="avatar-wrapper">
+              <img src="assets/avatar.jpg" alt="Portrait de Seif Ghozlani" class="avatar-img" id="avatar-image">
+
+              <!-- Top Floating Badge -->
+              <div class="floating-badge badge-top">
+                <div class="badge-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="badge-text-title" id="badge-title-1">Ingénieur Stagiaire</div>
+                  <div class="badge-text-sub" id="badge-sub-1">Polytechnique Sousse</div>
+                </div>
+              </div>
+
+              <!-- Bottom Floating Badge -->
+              <div class="floating-badge badge-bottom">
+                <div class="badge-icon-box" style="background: rgba(139, 92, 246, 0.15); color: #c084fc;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="badge-text-title" id="badge-title-2">Expérience Leoni</div>
+                  <div class="badge-text-sub" id="badge-sub-2">2+ ans de pratique</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KEY STATS BAR ==================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid" id="stats-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & STAGES ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="exp-tag">Parcours & Réalisations</span>
+          <h2 class="section-title" id="exp-title">Expériences Professionnelles & Stages</h2>
+          <p class="section-desc" id="exp-desc">
+            Deux années d'expérience industrielle chez Leoni (Sousse), du développement de solutions IoT sur ligne réelle à l'administration de bases de données et dashboards de pilotage.
+          </p>
+        </div>
+
+        <div class="timeline-container" id="timeline-container">
+          <!-- Timeline items injected dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section" id="skills" style="background: rgba(13, 18, 30, 0.35);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="skills-tag">Expertise Technique</span>
+          <h2 class="section-title" id="skills-title">Compétences & Outils Maîtrisés</h2>
+          <p class="section-desc" id="skills-desc">
+            Une double synergie forte entre la programmation bas niveau (embarqué, microcontrôleurs) et l'ingénierie logicielle & data.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SHOWCASE ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="projects-tag">Innovations & Cas Concrets</span>
+          <h2 class="section-title" id="projects-title">Projets Phares & Réalisations</h2>
+          <p class="section-desc" id="projects-desc">
+            Aperçu de mes réalisations clés en atelier industriel, systèmes embarqués et algorithmique avancée.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" id="filter-all">Tous les projets</button>
+          <button class="filter-btn" data-filter="embedded" id="filter-embedded">Systèmes Embarqués & IoT</button>
+          <button class="filter-btn" data-filter="data" id="filter-data">Data & Power BI</button>
+          <button class="filter-btn" data-filter="software" id="filter-software">Logiciel & ICPC</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & DISTINCTIONS ==================== -->
+    <section class="section" id="education" style="background: rgba(13, 18, 30, 0.35);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="edu-tag">Parcours Académique & Mérites</span>
+          <h2 class="section-title" id="edu-title">Formation & Distinctions</h2>
+          <p class="section-desc" id="edu-desc">
+            Un cursus d'ingénieur d'excellence enrichi d'une licence en automatisme et d'une distinction prestigieuse à l'ICPC.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Left Column: Academic Degrees -->
+          <div id="edu-cards-list">
+            <!-- Injected via JS -->
+          </div>
+
+          <!-- Right Column: ICPC Honors -->
+          <div id="distinction-box">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+
+        <!-- Languages & Interests Row -->
+        <div class="lang-interest-grid">
+          <div class="skill-category-card" id="languages-list">
+            <!-- Languages progress bars injected via JS -->
+          </div>
+
+          <div class="skill-category-card" id="interests-list">
+            <!-- Interests pills injected via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="contact-tag">Collaborons Ensemble</span>
+          <h2 class="section-title" id="contact-title">Contact & Opportunités</h2>
+          <p class="section-desc" id="contact-desc">
+            Vous recherchez un ingénieur réactif et passionné pour un projet, un stage ou un défi technique ? Discutons-en !
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Direct Contacts -->
+          <div class="contact-direct">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">
+              Coordonnées Directes
+            </h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Cliquez sur une carte pour copier instantanément l'information dans votre presse-papiers :
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email Card -->
+              <div class="contact-item-card" onclick="copyToClipboard('seif.gholzani@polytechnicien.tn', 'Email')" id="contact-email-card">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">EMAIL PROFESSIONNEL</div>
+                  <div class="contact-card-value" id="contact-email-val">seif.gholzani@polytechnicien.tn</div>
+                </div>
+                <div class="copy-badge">Copier 📋</div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-item-card" onclick="copyToClipboard('+21655096929', 'Téléphone')" id="contact-phone-card">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">TÉLÉPHONE / WHATSAPP</div>
+                  <div class="contact-card-value" id="contact-phone-val">+216 55 096 929</div>
+                </div>
+                <div class="copy-badge">Copier 📋</div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-item-card" id="contact-loc-card">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">LOCALISATION ACTUELLE</div>
+                  <div class="contact-card-value" id="contact-loc-val">Sousse, Tunisie</div>
+                </div>
+              </div>
+
+              <!-- GitHub Profile Card -->
+              <a href="https://github.com/seifghozlani-commits" target="_blank" rel="noopener noreferrer" class="contact-item-card" id="contact-github-card">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">GITHUB REPOSITORIES</div>
+                  <div class="contact-card-value" id="contact-github-val">github.com/seifghozlani-commits</div>
+                </div>
+                <div class="copy-badge">Visiter ↗</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-container">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem;">
+              Envoyez-moi un Message
+            </h3>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label" id="form-name-label">Votre Nom</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Ex: Jean Dupont" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label" id="form-email-label">Votre Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="Ex: contact@entreprise.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label" id="form-subject-label">Sujet du Message</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="Ex: Opportunité de Stage PFE / Projet IoT" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label" id="form-msg-label">Votre Message</label>
+                <textarea id="form-message" class="form-control" placeholder="Bonjour Seif, j'ai découvert votre profil et souhaiterais échanger avec vous..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%; margin-top: 0.5rem;">
+                <span>Envoyer le Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div id="footer-copy">
+        © 2026 Seif Ghozlani. Tous droits réservés. Conçu pour l'excellence d'ingénierie.
+      </div>
+      <div>
+        <a href="#hero" style="color: var(--primary); font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600;">
+          ↑ Retour en haut
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fermer la boîte de dialogue">✕</button>
+      <div id="modal-body-content">
+        <!-- Injected dynamically on project click -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATIONS ==================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
